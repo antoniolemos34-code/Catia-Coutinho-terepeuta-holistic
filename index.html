@@ -60,13 +60,15 @@
       letter-spacing: .04em;
     }
 
+    /* LOGO DA CÁTIA – usa a imagem que enviaste */
     .brand-logo {
-      width: 32px;
-      height: 32px;
-      border-radius: 999px;
-      object-fit: cover;
-      border: 1px solid var(--border);
-      background: #1d1d1f;
+      height: 42px;          /* altura fixa, largura ajusta automaticamente */
+      width: auto;
+      border-radius: 0;
+      object-fit: contain;
+      border: none;
+      background: transparent;
+      display: block;
     }
 
     nav ul {
@@ -301,8 +303,8 @@
   <header>
     <div class="nav">
       <div class="brand">
-        <!-- LOGO: ficheiro logo-catia.png na mesma pasta do index.html -->
-        <img src="logo-catia.png" alt="Logotipo Cátia Coutinho" class="brand-logo">
+        <!-- LOGO: ficheiro catia-logo.png na mesma pasta do index.html -->
+        <img src="catia-logo.png" alt="Logotipo Cátia Coutinho" class="brand-logo">
         <div>Cátia Coutinho</div>
       </div>
       <nav>
@@ -520,4 +522,4 @@
     <p>&copy; 2025 Cátia Coutinho – Terapias Holísticas.</p>
   </footer>
 </body>
-</html>
+          </html>
