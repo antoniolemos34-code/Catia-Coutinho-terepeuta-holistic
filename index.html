@@ -56,13 +56,11 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-weight: 600;
-      letter-spacing: .04em;
     }
 
-    /* LOGO DA CÁTIA – usa a imagem que enviaste */
+    /* LOGO da Cátia – usa a imagem de assinatura */
     .brand-logo {
-      height: 42px;          /* altura fixa, largura ajusta automaticamente */
+      height: 48px;          /* aumenta/diminui se quiseres maior/menor */
       width: auto;
       border-radius: 0;
       object-fit: contain;
@@ -303,9 +301,13 @@
   <header>
     <div class="nav">
       <div class="brand">
-        <!-- LOGO: ficheiro catia-logo.png na mesma pasta do index.html -->
-        <img src="catia-logo.png" alt="Logotipo Cátia Coutinho" class="brand-logo">
-        <div>Cátia Coutinho</div>
+        <!-- TENTA PNG; SE NÃO HOUVER, MUDA PARA JPG AUTOMATICAMENTE -->
+        <img
+          src="catia-logo.png"
+          onerror="this.onerror=null;this.src='catia-logo.jpg';"
+          alt="Logotipo Cátia Coutinho"
+          class="brand-logo"
+        >
       </div>
       <nav>
         <ul>
@@ -332,7 +334,6 @@
             para ajudar a libertar bloqueios, ganhar clareza e reencontrar paz interior.
           </p>
           <div class="hero-cta">
-            <!-- botão sem mostrar número -->
             <a class="btn-primary" href="https://wa.me/351934659071" target="_blank" rel="noopener">
               Falar com a Cátia no WhatsApp
             </a>
@@ -346,7 +347,6 @@
         </div>
 
         <div class="hero-media" aria-label="Imagem associada a terapias holísticas">
-          <!-- NOVA FOTO HERO: 3978594 -->
           <img
             src="https://images.pexels.com/photos/3978594/pexels-photo-3978594.jpeg"
             alt="Pessoa em ambiente zen com cristais e elementos naturais."
@@ -379,7 +379,6 @@
           </div>
 
           <div class="card">
-            <!-- NOVA FOTO SOBRE: 3865712 -->
             <img
               src="https://images.pexels.com/photos/3865712/pexels-photo-3865712.jpeg"
               alt="Pessoa deitada em sessão de terapia energética."
@@ -408,7 +407,6 @@
 
         <div class="grid">
           <article class="card">
-            <!-- NOVA FOTO: 6932056 -->
             <img
               src="https://images.pexels.com/photos/6932056/pexels-photo-6932056.jpeg"
               alt="Mãos em posição de cura sobre o corpo em ambiente tranquilo."
@@ -421,7 +419,6 @@
           </article>
 
           <article class="card">
-            <!-- NOVA FOTO: 3230236 -->
             <img
               src="https://images.pexels.com/photos/3230236/pexels-photo-3230236.jpeg"
               alt="Velas e elementos coloridos simbolizando cromoterapia."
@@ -435,7 +432,6 @@
           </article>
 
           <article class="card">
-            <!-- NOVA FOTO: 8378740 -->
             <img
               src="https://images.pexels.com/photos/8378740/pexels-photo-8378740.jpeg"
               alt="Pessoa em posição de meditação com ambiente espiritual."
@@ -449,7 +445,6 @@
           </article>
 
           <article class="card">
-            <!-- FOTO EXISTENTE (mantida) -->
             <img
               src="https://images.pexels.com/photos/163186/globuli-medical-bless-you-homeopathy-163186.jpeg"
               alt="Pequenas esferas brancas em frasco, simbolizando detalhes e códigos pessoais."
@@ -473,7 +468,6 @@
         </p>
 
         <div class="card">
-          <!-- FOTO ADICIONAL: 5240697 antiga (mantida) -->
           <img
             src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg"
             alt="Elementos naturais e pedras, simbolizando energias subtis."
@@ -522,4 +516,4 @@
     <p>&copy; 2025 Cátia Coutinho – Terapias Holísticas.</p>
   </footer>
 </body>
-          </html>
+                </html>
