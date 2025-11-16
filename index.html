@@ -27,6 +27,7 @@
       background: var(--bg);
       color: var(--text-main);
       line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
 
     a { color: var(--accent); text-decoration: none; }
@@ -59,16 +60,13 @@
       letter-spacing: .04em;
     }
 
-    .brand-mark {
-      width: 30px;
-      height: 30px;
+    .brand-logo {
+      width: 32px;
+      height: 32px;
       border-radius: 999px;
+      object-fit: cover;
+      border: 1px solid var(--border);
       background: #1d1d1f;
-      color: #f5f5f7;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     nav ul {
@@ -303,7 +301,8 @@
   <header>
     <div class="nav">
       <div class="brand">
-        <div class="brand-mark">CC</div>
+        <!-- LOGO: ficheiro logo-catia.png na mesma pasta do index.html -->
+        <img src="logo-catia.png" alt="Logotipo Cátia Coutinho" class="brand-logo">
         <div>Cátia Coutinho</div>
       </div>
       <nav>
@@ -345,9 +344,10 @@
         </div>
 
         <div class="hero-media" aria-label="Imagem associada a terapias holísticas">
+          <!-- NOVA FOTO HERO: 3978594 -->
           <img
-            src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg"
-            alt="Pessoa em momento de relaxamento com pedras e elementos naturais."
+            src="https://images.pexels.com/photos/3978594/pexels-photo-3978594.jpeg"
+            alt="Pessoa em ambiente zen com cristais e elementos naturais."
           />
         </div>
       </div>
@@ -377,9 +377,10 @@
           </div>
 
           <div class="card">
+            <!-- NOVA FOTO SOBRE: 3865712 -->
             <img
-              src="https://images.pexels.com/photos/5240677/pexels-photo-5240677.jpeg"
-              alt="Mãos em posição de cura sobre uma pessoa deitada."
+              src="https://images.pexels.com/photos/3865712/pexels-photo-3865712.jpeg"
+              alt="Pessoa deitada em sessão de terapia energética."
             />
             <h3>Terapias que utilizo</h3>
             <p>Seleciono a combinação de técnicas mais alinhada com o momento que estás a viver.</p>
@@ -405,9 +406,10 @@
 
         <div class="grid">
           <article class="card">
+            <!-- NOVA FOTO: 6932056 -->
             <img
-              src="https://images.pexels.com/photos/5240677/pexels-photo-5240677.jpeg"
-              alt="Reiki: mãos sobre o corpo em ambiente tranquilo."
+              src="https://images.pexels.com/photos/6932056/pexels-photo-6932056.jpeg"
+              alt="Mãos em posição de cura sobre o corpo em ambiente tranquilo."
             />
             <h3>Reiki</h3>
             <p>
@@ -417,9 +419,10 @@
           </article>
 
           <article class="card">
+            <!-- NOVA FOTO: 3230236 -->
             <img
-              src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg"
-              alt="Frascos de vidro com cores, representando cromoterapia."
+              src="https://images.pexels.com/photos/3230236/pexels-photo-3230236.jpeg"
+              alt="Velas e elementos coloridos simbolizando cromoterapia."
             />
             <h3>Cromoterapia</h3>
             <p>
@@ -430,9 +433,10 @@
           </article>
 
           <article class="card">
+            <!-- NOVA FOTO: 8378740 -->
             <img
-              src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg"
-              alt="Elementos naturais e pedras, simbolizando energias subtis."
+              src="https://images.pexels.com/photos/8378740/pexels-photo-8378740.jpeg"
+              alt="Pessoa em posição de meditação com ambiente espiritual."
             />
             <h3>Shamballa</h3>
             <p>
@@ -443,6 +447,7 @@
           </article>
 
           <article class="card">
+            <!-- FOTO EXISTENTE (mantida) -->
             <img
               src="https://images.pexels.com/photos/163186/globuli-medical-bless-you-homeopathy-163186.jpeg"
               alt="Pequenas esferas brancas em frasco, simbolizando detalhes e códigos pessoais."
@@ -466,6 +471,11 @@
         </p>
 
         <div class="card">
+          <!-- FOTO ADICIONAL: 5240697 antiga (mantida) -->
+          <img
+            src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg"
+            alt="Elementos naturais e pedras, simbolizando energias subtis."
+          />
           <p>
             As Runas Viking são um antigo alfabeto nórdico usado para magia, orientação e
             autoconhecimento. Cada símbolo carrega uma energia e uma mensagem que podem
@@ -486,20 +496,21 @@
     <section id="contacto">
       <div class="container">
         <h2 class="section-title">Marca a tua sessão</h2>
-      <p class="section-sub">
-        Se sentes que é o momento de cuidar mais de ti, podemos dar esse passo em conjunto.
-      </p>
-
-      <div class="contact-card">
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/351934659071" target="_blank" rel="noopener">Enviar mensagem no WhatsApp</a></p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/_catia_coutinho?igsh=MW05dDAxYTdvOHdsMA==" target="_blank" rel="noopener">Abrir perfil no Instagram</a></p>
-        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:6px;">
-          Clica num dos botões acima para falar com a Cátia e tirar dúvidas ou agendar a terapia mais alinhada contigo.
+        <p class="section-sub">
+          Se sentes que é o momento de cuidar mais de ti, podemos dar esse passo em conjunto.
         </p>
 
-        <div class="contact-tags">
-          <span>Atendimento por marcação</span>
-          <span>Espaço seguro e acolhedor</span>
+        <div class="contact-card">
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/351934659071" target="_blank" rel="noopener">Enviar mensagem no WhatsApp</a></p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/_catia_coutinho?igsh=MW05dDAxYTdvOHdsMA==" target="_blank" rel="noopener">Abrir perfil no Instagram</a></p>
+          <p style="font-size:0.9rem; color:var(--text-muted); margin-top:6px;">
+            Clica num dos botões acima para falar com a Cátia e tirar dúvidas ou agendar a terapia mais alinhada contigo.
+          </p>
+
+          <div class="contact-tags">
+            <span>Atendimento por marcação</span>
+            <span>Espaço seguro e acolhedor</span>
+          </div>
         </div>
       </div>
     </section>
