@@ -60,31 +60,11 @@
       gap:10px;
     }
 
-    .brand-mark {
-      width:34px;
-      height:34px;
-      border-radius:50%;
-      border:2px solid var(--accent);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:600;
-      color:var(--accent);
-      font-size:1.2rem;
-      background:#ffffff;
-      box-shadow:0 0 18px rgba(0,113,227,0.35);
-    }
-
-    .brand-text-title {
-      font-size:0.95rem;
-      font-weight:600;
-    }
-
-    .brand-text-sub {
-      font-size:0.75rem;
-      text-transform:uppercase;
-      letter-spacing:0.12em;
-      color:var(--text-muted);
+    .brand-logo {
+      height:55px;
+      width:auto;
+      display:block;
+      border-radius:6px;
     }
 
     nav ul {
@@ -370,11 +350,8 @@
 <header>
   <div class="nav">
     <div class="brand">
-      <div class="brand-mark">C</div>
-      <div>
-        <div class="brand-text-title">Cátia Coutinho</div>
-        <div class="brand-text-sub">Terapias Holísticas</div>
-      </div>
+      <!-- LOGO FINAL – ficheiro Catia-logo.png no repositório -->
+      <img src="Catia-logo.png" alt="Logotipo Cátia Coutinho" class="brand-logo">
     </div>
     <nav>
       <ul>
@@ -391,8 +368,8 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="hero-kicker">Equilíbrio • Energia • Autoconhecimento</div>
-        <h1>Equilíbrio emocional, físico e espiritual com <span class="hero-highlight">terapias holísticas</span>.</h1>
+        <div class="hero-kicker">Energia • Cor • Autoconhecimento</div>
+        <h1>Terapias holísticas para equilibrar o teu <span class="hero-highlight">corpo, mente e espírito</span>.</h1>
         <p>Reiki, Shamballa, Numerologia Quântica, Cromoterapia e Runas Viking para te ajudar a libertar bloqueios, ganhar clareza e sentir mais paz interior.</p>
 
         <div class="hero-badges">
@@ -403,10 +380,10 @@
         <div class="hero-cta">
           <!-- ligação direta para o WhatsApp SEM mostrar número -->
           <a class="btn-primary" href="https://wa.me/351934659071" target="_blank" rel="noopener">
-            Agendar sessão por WhatsApp
+            Falar com a Cátia no WhatsApp
           </a>
           <a class="btn-outline" href="https://www.instagram.com/_catia_coutinho" target="_blank" rel="noopener">
-            Ver Instagram da Cátia
+            Ver Instagram
           </a>
         </div>
       </div>
@@ -488,20 +465,18 @@
           <p>Ferramenta de autoconhecimento que utiliza os teus números pessoais para revelar padrões energéticos, missão de vida, bloqueios e potenciais, trazendo clareza ao teu caminho.</p>
         </article>
 
-        <!-- CROMOTERAPIA (AGORA COM A IMAGEM QUE ESTAVA NAS RUNAS) -->
+        <!-- CROMOTERAPIA -->
         <article class="card">
           <div class="therapy-img">
-            <!-- IMAGEM QUE ESTAVA NAS RUNAS, PASSA PARA CROMOTERAPIA -->
             <img src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Luzes coloridas de cromoterapia">
           </div>
           <h3>Cromoterapia</h3>
           <p>Terapia que utiliza as cores para harmonizar corpo e mente. Cada cor possui uma frequência capaz de favorecer equilíbrio emocional, relaxamento e vitalidade – sem massagem, apenas através da energia e da luz.</p>
         </article>
 
-        <!-- RUNAS VIKING (AGORA COM IMAGEM NEUTRA DE SPA) -->
+        <!-- RUNAS VIKING -->
         <article class="card">
           <div class="therapy-img">
-            <!-- IMAGEM NEUTRA DE SPA, SEM MASSAGEM -->
             <img src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Imagem neutra de spa com velas e pedras">
           </div>
           <h3>Runas Viking</h3>
