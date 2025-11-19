@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- GOOGLE SEARCH CONSOLE -->
+  <meta name="google-site-verification" content="zejccmjXLDAVKalcirat1FyvTLGgDMYDycOZoWC6O6E" />
+
   <title>Cátia Coutinho – Terapias Holísticas</title>
   <meta name="description" content="Cátia Coutinho, terapeuta holística. Reiki, Shamballa, Numerologia Quântica, Cromoterapia e Runas Viking para equilíbrio emocional, físico e espiritual.">
 
@@ -16,7 +20,7 @@
       --bg-soft: #ffffff;
       --text-main: #111111;
       --text-muted: #6e6e73;
-      --accent: #0071e3;      /* azul estilo Apple */
+      --accent: #0071e3;
       --border: #d2d2d7;
       --radius-lg: 26px;
       --radius-md: 18px;
@@ -185,8 +189,6 @@
       cursor:pointer;
     }
 
-    /* HERO IMAGE CARD – FOTO DIREITA */
-
     .hero-media {
       background:#ffffff;
       border-radius:var(--radius-lg);
@@ -203,7 +205,7 @@
 
     .hero-img img {
       width:100%;
-      height:auto;          /* foto direita, sem rodar nem cortar */
+      height:auto;
       display:block;
     }
 
@@ -211,8 +213,6 @@
       font-size:0.83rem;
       color:var(--text-muted);
     }
-
-    /* SEÇÕES GERAIS */
 
     .section-title {
       font-size:1.7rem;
@@ -251,8 +251,6 @@
       color:var(--text-muted);
     }
 
-    /* IMAGENS NAS TERAPIAS – DIREITAS */
-
     .therapy-img {
       width:100%;
       border-radius:14px;
@@ -263,11 +261,9 @@
 
     .therapy-img img {
       width:100%;
-      height:auto;         /* SEM cortar a foto: aparece direita */
+      height:auto;
       display:block;
     }
-
-    /* SOBRE */
 
     .about-layout {
       display:grid;
@@ -299,8 +295,6 @@
       color:var(--text-muted);
       background:#fafafa;
     }
-
-    /* CONTACTO */
 
     .contact-card {
       text-align:center;
@@ -340,17 +334,17 @@
     }
 
     @media (max-width: 780px) {
-      nav ul { display:none; } /* mais simples no telemóvel */
+      nav ul { display:none; }
       .hero-grid { grid-template-columns:1fr; }
       .hero { padding-top:70px; }
     }
   </style>
 </head>
+
 <body>
 <header>
   <div class="nav">
     <div class="brand">
-      <!-- LOGO FINAL – ficheiro Catia-logo.png no repositório -->
       <img src="Catia-logo.png" alt="Logotipo Cátia Coutinho" class="brand-logo">
     </div>
     <nav>
@@ -364,7 +358,6 @@
 </header>
 
 <main>
-  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
@@ -378,7 +371,6 @@
         </div>
 
         <div class="hero-cta">
-          <!-- ligação direta para o WhatsApp SEM mostrar número -->
           <a class="btn-primary" href="https://wa.me/351934659071" target="_blank" rel="noopener">
             Falar com a Cátia no WhatsApp
           </a>
@@ -388,10 +380,8 @@
         </div>
       </div>
 
-      <!-- FOTO DIREITA NO HERO -->
-      <aside class="hero-media" aria-hidden="true">
+      <aside class="hero-media">
         <div class="hero-img">
-          <!-- podes trocar a URL por outra foto que gostarem -->
           <img src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Ambiente calmo de terapia holística">
         </div>
         <div class="hero-caption">
@@ -401,7 +391,6 @@
     </div>
   </section>
 
-  <!-- SOBRE -->
   <section id="sobre">
     <div class="container">
       <h2 class="section-title">Sobre a Cátia</h2>
@@ -431,66 +420,59 @@
     </div>
   </section>
 
-  <!-- TERAPIAS -->
   <section id="terapias">
     <div class="container">
       <h2 class="section-title">Terapias</h2>
       <p class="section-sub">Conhece um pouco de cada ferramenta que pode ser usada nas tuas sessões.</p>
 
       <div class="grid">
-        <!-- REIKI -->
         <article class="card">
           <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/5240677/pexels-photo-5240677.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mãos de Reiki com energia de luz">
+            <img src="https://images.pexels.com/photos/5240677/pexels-photo-5240677.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Mãos de Reiki">
           </div>
           <h3>Reiki</h3>
-          <p>Terapia energética japonesa que canaliza energia universal através das mãos, promovendo relaxamento profundo, bem-estar e equilíbrio físico, emocional e espiritual.</p>
+          <p>Terapia energética japonesa que canaliza energia universal através das mãos.</p>
         </article>
 
-        <!-- SHAMBALLA -->
         <article class="card">
           <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Luz suave e ambiente calmo de meditação">
+            <img src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Shamballa">
           </div>
           <h3>Shamballa</h3>
-          <p>Sistema de cura multidimensional que trabalha com frequências de luz e amor, facilitando libertação de padrões antigos, fortalecimento interior e expansão de consciência.</p>
+          <p>Sistema de cura multidimensional com frequências de luz e amor.</p>
         </article>
 
-        <!-- NUMEROLOGIA QUÂNTICA -->
         <article class="card">
           <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/163186/globuli-medical-bless-you-homeopathy-163186.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Símbolos e números para autoconhecimento">
+            <img src="https://images.pexels.com/photos/163186/globuli-medical-bless-you-homeopathy-163186.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Numerologia">
           </div>
           <h3>Numerologia Quântica</h3>
-          <p>Ferramenta de autoconhecimento que utiliza os teus números pessoais para revelar padrões energéticos, missão de vida, bloqueios e potenciais, trazendo clareza ao teu caminho.</p>
+          <p>Autoconhecimento através dos teus números pessoais.</p>
         </article>
 
-        <!-- CROMOTERAPIA -->
         <article class="card">
           <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Luzes coloridas de cromoterapia">
+            <img src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cromoterapia">
           </div>
           <h3>Cromoterapia</h3>
-          <p>Terapia que utiliza as cores para harmonizar corpo e mente. Cada cor possui uma frequência capaz de favorecer equilíbrio emocional, relaxamento e vitalidade – sem massagem, apenas através da energia e da luz.</p>
+          <p>Harmonização do corpo e mente através das cores.</p>
         </article>
 
-        <!-- RUNAS VIKING -->
         <article class="card">
           <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Imagem neutra de spa com velas e pedras">
+            <img src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Runas Viking">
           </div>
           <h3>Runas Viking</h3>
-          <p>As Runas Viking são um antigo alfabeto nórdico usado para orientação e autoconhecimento. Cada símbolo traz uma energia própria, com mensagens que ajudam a ganhar clareza e alinhar decisões importantes.</p>
+          <p>Mensagens e energia ancestral para clareza e orientação.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- CONTACTO -->
   <section id="contacto">
     <div class="container">
       <h2 class="section-title">Marca a tua sessão</h2>
-      <p class="section-sub">Entra em contacto para esclarecer dúvidas ou agendar a terapia mais alinhada contigo.</p>
+      <p class="section-sub">Entra em contacto para esclarecer dúvidas ou agendar.</p>
 
       <div class="card contact-card">
         <p><strong>Fala com a Cátia por WhatsApp:</strong></p>
@@ -501,8 +483,7 @@
         </p>
 
         <p class="contact-note">
-          Podes enviar uma mensagem com o teu nome, o tema que gostavas de trabalhar
-          e se preferes sessão presencial ou online.
+          Envia o teu nome e se preferes sessão presencial ou online.
         </p>
 
         <div class="social-links">
@@ -518,5 +499,6 @@
 <footer>
   <p>&copy; 2025 Cátia Coutinho • Terapias Holísticas</p>
 </footer>
+
 </body>
 </html>
