@@ -11,21 +11,15 @@
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://catiacoutinhoholistica.com/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Cátia Coutinho — Terapias Holísticas" />
   <meta property="og:title" content="Cátia Coutinho — Terapias Holísticas" />
   <meta property="og:description" content="Sessões presenciais e online por marcação. Bem-estar, equilíbrio e autoconhecimento." />
   <meta property="og:url" content="https://catiacoutinhoholistica.com/" />
-  <!-- Se criares og.jpg (1200x630), ativa isto:
-  <meta property="og:image" content="https://catiacoutinhoholistica.com/og.jpg" />
-  -->
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Favicon (usa o teu logo redondo) -->
   <link rel="icon" href="logo-redondo.png" type="image/png" />
 
-  <!-- Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -33,375 +27,199 @@
 
   <style>
     :root{
-      --bg: #f6f6f2;
-      --card: rgba(255,255,255,.92);
-      --ink: #121513;
-      --muted:#5a635d;
-      --line: rgba(18,21,19,.10);
-
-      --brand: #2e6f4d;
+      --bg:#f6f6f2;
+      --card:rgba(255,255,255,.92);
+      --ink:#121513;
+      --line:rgba(18,21,19,.10);
+      --brand:#2e6f4d;
       --gold:#b89b57;
-
-      --shadow: 0 18px 48px rgba(0,0,0,.10);
-      --shadow-soft: 0 12px 30px rgba(0,0,0,.07);
-
-      --radius: 22px;
-      --radius-lg: 28px;
-
-      --container: 1120px;
+      --shadow:0 18px 48px rgba(0,0,0,.10);
+      --shadow-soft:0 12px 30px rgba(0,0,0,.07);
+      --radius:22px;
+      --radius-lg:28px;
+      --container:1120px;
     }
-
-    *{ box-sizing:border-box; }
-    html{ scroll-behavior:smooth; }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
       color:var(--ink);
       background:
         radial-gradient(1200px 700px at 10% 0%, rgba(46,111,77,.10), transparent 55%),
         radial-gradient(1100px 650px at 90% 10%, rgba(184,155,87,.10), transparent 55%),
         var(--bg);
     }
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--container),calc(100% - 40px));margin-inline:auto}
 
-    a{ color:inherit; }
-    img{ max-width:100%; display:block; }
-    .wrap{
-      width:min(var(--container), calc(100% - 40px));
-      margin-inline:auto;
-    }
-
-    /* Header */
     header{
-      position:sticky;
-      top:0;
-      z-index:50;
-      background: rgba(255,255,255,.82);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--line);
+      position:sticky;top:0;z-index:50;
+      background:rgba(255,255,255,.82);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
     }
-    .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px 0;
-      gap:14px;
-    }
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:14px}
     .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      text-decoration:none;
-      min-width: 220px;
+      display:flex;align-items:center;gap:12px;text-decoration:none;
+      min-width:220px;
     }
+    /* FIX: logo mais visível */
     .brand img{
-      height:44px;
-      width:auto;
+      height:54px;width:auto;object-fit:contain;
+      filter: drop-shadow(0 8px 16px rgba(0,0,0,.12));
     }
 
-    nav{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      flex-wrap:wrap;
-      justify-content:center;
-    }
+    nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
     nav a{
-      text-decoration:none;
-      color: rgba(18,21,19,.82);
-      font-weight:500;
-      font-size:14px;
-      padding:10px 12px;
-      border-radius:999px;
-      transition: background .12s ease, color .12s ease;
+      text-decoration:none;color:rgba(18,21,19,.82);
+      font-weight:500;font-size:14px;padding:10px 12px;border-radius:999px;
+      transition:background .12s ease,color .12s ease;
     }
-    nav a:hover{ background: rgba(46,111,77,.08); color: var(--ink); }
+    nav a:hover{background:rgba(46,111,77,.08);color:var(--ink)}
 
-    .cta{
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-
+    .cta{display:flex;align-items:center;gap:10px}
     .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      padding:12px 18px;
-      border-radius:999px;
-      font-weight:650;
-      text-decoration:none;
-      border:1px solid transparent;
-      box-shadow: var(--shadow-soft);
-      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
-      white-space:nowrap;
-      font-size:14px;
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 18px;border-radius:999px;font-weight:650;text-decoration:none;
+      border:1px solid transparent;box-shadow:var(--shadow-soft);
+      transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+      white-space:nowrap;font-size:14px;
     }
-    .btn:hover{ transform: translateY(-1px); box-shadow: var(--shadow); }
-    .btn-primary{ background: var(--brand); color:#fff; }
-    .btn-ghost{ background:#fff; color:var(--ink); border-color: var(--line); box-shadow:none; }
-    .btn-ghost:hover{ box-shadow: var(--shadow-soft); }
+    .btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+    .btn-primary{background:var(--brand);color:#fff}
+    .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:none}
+    .btn-ghost:hover{box-shadow:var(--shadow-soft)}
 
-    /* Hero */
-    .hero{ padding: 56px 0 26px; }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 22px;
-      align-items:stretch;
-    }
+    .hero{padding:56px 0 26px}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}
     .hero-card{
-      background: rgba(255,255,255,.88);
+      background:rgba(255,255,255,.88);
       border:1px solid var(--line);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-soft);
-      padding: 28px;
+      border-radius:var(--radius-lg);
+      box-shadow:var(--shadow-soft);
+      padding:28px;
       overflow:hidden;
       position:relative;
     }
     .kicker{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      font-size:12px;
-      letter-spacing:.18em;
-      text-transform:uppercase;
-      color: rgba(18,21,19,.62);
-      margin-bottom: 14px;
+      display:inline-flex;align-items:center;gap:10px;
+      font-size:12px;letter-spacing:.18em;text-transform:uppercase;
+      color:rgba(18,21,19,.62);margin-bottom:14px;
     }
     .dot{
-      width:10px; height:10px;
-      border-radius:99px;
-      background: linear-gradient(135deg, var(--brand), var(--gold));
-      box-shadow: 0 10px 20px rgba(46,111,77,.18);
+      width:10px;height:10px;border-radius:99px;
+      background:linear-gradient(135deg,var(--brand),var(--gold));
+      box-shadow:0 10px 20px rgba(46,111,77,.18);
     }
-    h1{
-      margin:0 0 12px;
-      font-size: clamp(28px, 3.2vw, 44px);
-      line-height:1.08;
-      letter-spacing:-.02em;
-    }
-    .accent{ color: var(--brand); }
-    .lead{
-      margin: 0 0 18px;
-      color: rgba(18,21,19,.72);
-      font-size: 15.5px;
-      line-height:1.65;
-      max-width: 62ch;
-    }
-    .pillrow{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin: 18px 0 22px;
-    }
+    h1{margin:0 0 12px;font-size:clamp(28px,3.2vw,44px);line-height:1.08;letter-spacing:-.02em}
+    .accent{color:var(--brand)}
+    .lead{margin:0 0 18px;color:rgba(18,21,19,.72);font-size:15.5px;line-height:1.65;max-width:62ch}
+    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 22px}
     .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 12px;
-      border-radius:999px;
-      background: rgba(46,111,77,.08);
-      border: 1px solid rgba(46,111,77,.16);
-      color: rgba(18,21,19,.86);
-      font-size: 13px;
-      font-weight: 520;
-      white-space:nowrap;
+      display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border-radius:999px;
+      background:rgba(46,111,77,.08);border:1px solid rgba(46,111,77,.16);
+      color:rgba(18,21,19,.86);font-size:13px;font-weight:520;white-space:nowrap;
     }
-    .pill b{ color: var(--brand); font-weight:750; }
-    .hero-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      align-items:center;
-      margin-top: 6px;
-    }
+    .pill b{color:var(--brand);font-weight:750}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:6px}
     .meta{
-      margin-top: 16px;
-      padding-top: 14px;
-      border-top: 1px dashed rgba(18,21,19,.18);
-      color: rgba(18,21,19,.62);
-      font-size: 13px;
-      line-height:1.55;
+      margin-top:16px;padding-top:14px;border-top:1px dashed rgba(18,21,19,.18);
+      color:rgba(18,21,19,.62);font-size:13px;line-height:1.55;
     }
 
     .hero-photo{
-      border-radius: var(--radius-lg);
+      border-radius:var(--radius-lg);
       overflow:hidden;
       border:1px solid var(--line);
-      box-shadow: var(--shadow-soft);
-      background:#fff;
+      box-shadow:var(--shadow-soft);
+      background:linear-gradient(135deg, rgba(46,111,77,.10), rgba(184,155,87,.10));
       position:relative;
-      min-height: 420px;
+      min-height:420px;
     }
-    .hero-photo img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      min-height: 420px;
-      filter: saturate(1.02);
-    }
-    .overlay{
-      position:absolute; inset:0;
-      background: linear-gradient(to top, rgba(11,15,13,.55), rgba(11,15,13,.05) 55%);
-      pointer-events:none;
-    }
+    .hero-photo img{width:100%;height:100%;object-fit:cover;min-height:420px;filter:saturate(1.02)}
+    .overlay{position:absolute;inset:0;background:linear-gradient(to top, rgba(11,15,13,.55), rgba(11,15,13,.05) 55%);pointer-events:none}
     .badge{
-      position:absolute;
-      left: 16px;
-      bottom: 16px;
-      display:inline-flex;
-      flex-direction:column;
-      gap:6px;
-      padding:12px 14px;
-      border-radius: 18px;
-      background: rgba(255,255,255,.86);
-      border:1px solid var(--line);
-      backdrop-filter: blur(10px);
-      max-width: 92%;
+      position:absolute;left:16px;bottom:16px;display:inline-flex;flex-direction:column;gap:6px;
+      padding:12px 14px;border-radius:18px;background:rgba(255,255,255,.86);
+      border:1px solid var(--line);backdrop-filter:blur(10px);max-width:92%;
     }
-    .badge .t1{ font-weight: 720; letter-spacing:-.01em; }
-    .badge .t2{ color: rgba(18,21,19,.65); font-size: 13px; line-height:1.35; }
+    .badge .t1{font-weight:720;letter-spacing:-.01em}
+    .badge .t2{color:rgba(18,21,19,.65);font-size:13px;line-height:1.35}
 
-    /* Sections */
-    section{ padding: 34px 0; }
-    .section-title{ margin-bottom: 14px; }
-    h2{ margin: 0; font-size: 22px; letter-spacing:-.01em; }
-    .sub{
-      margin: 6px 0 0;
-      color: rgba(18,21,19,.62);
-      font-size: 14px;
-      line-height:1.6;
-      max-width: 72ch;
-    }
+    section{padding:34px 0}
+    .section-title{margin-bottom:14px}
+    h2{margin:0;font-size:22px;letter-spacing:-.01em}
+    .sub{margin:6px 0 0;color:rgba(18,21,19,.62);font-size:14px;line-height:1.6;max-width:72ch}
 
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 16px;
-      margin-top: 14px;
-    }
-    .card{
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-soft);
-      overflow:hidden;
-    }
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:14px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-soft);overflow:hidden}
 
-    /* About */
-    .about{ grid-column: span 7; padding: 22px; }
-    .about p{ margin:0; color: rgba(18,21,19,.72); line-height:1.7; font-size: 14.5px; }
-    .about .list{ margin-top: 14px; display:flex; flex-wrap:wrap; gap:10px; }
+    .about{grid-column:span 7;padding:22px}
+    .about p{margin:0;color:rgba(18,21,19,.72);line-height:1.7;font-size:14.5px}
+    .about .list{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
     .chip{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 12px;
-      border-radius:999px;
-      background:#fff;
-      border: 1px solid var(--line);
-      font-size: 13px;
-      color: rgba(18,21,19,.78);
+      display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);font-size:13px;color:rgba(18,21,19,.78);
     }
-    .about-photo{ grid-column: span 5; min-height: 240px; }
-    .about-photo img{ width:100%; height:100%; object-fit:cover; }
+    .about-photo{grid-column:span 5;min-height:240px}
+    .about-photo img{width:100%;height:100%;object-fit:cover}
 
-    /* Therapies */
-    .therapy{ grid-column: span 4; }
-    .therapy .img{ aspect-ratio: 16 / 10; background:#f0f0f0; }
-    .therapy .img img{ width:100%; height:100%; object-fit:cover; }
-    .therapy .body{ padding: 16px 16px 18px; }
-    .therapy h3{ margin:0 0 6px; font-size: 16px; letter-spacing:-.01em; }
-    .therapy p{ margin:0; color: rgba(18,21,19,.68); font-size: 13.5px; line-height:1.6; }
+    .therapy{grid-column:span 4}
+    .therapy .img{aspect-ratio:16/10;background:#f0f0f0}
+    .therapy .img img{width:100%;height:100%;object-fit:cover}
+    .therapy .body{padding:16px 16px 18px}
+    .therapy h3{margin:0 0 6px;font-size:16px;letter-spacing:-.01em}
+    .therapy p{margin:0;color:rgba(18,21,19,.68);font-size:13.5px;line-height:1.6}
 
-    /* Notice */
     .notice{
-      margin-top: 16px;
-      padding: 18px;
-      border-radius: var(--radius);
-      border: 1px solid rgba(184,155,87,.26);
-      background: rgba(184,155,87,.10);
-      color: rgba(18,21,19,.72);
-      font-size: 13.5px;
-      line-height:1.6;
+      margin-top:16px;padding:18px;border-radius:var(--radius);
+      border:1px solid rgba(184,155,87,.26);
+      background:rgba(184,155,87,.10);
+      color:rgba(18,21,19,.72);
+      font-size:13.5px;line-height:1.6;
     }
-    .notice b{ color: rgba(18,21,19,.86); }
+    .notice b{color:rgba(18,21,19,.86)}
 
-    /* Contact (WhatsApp only) */
-    .contact{
-      margin-top: 14px;
-      display:grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-    }
+    .contact{margin-top:14px;display:grid;grid-template-columns:1fr;gap:16px}
     .contact .box{
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-soft);
-      padding: 18px;
+      background:var(--card);border:1px solid var(--line);
+      border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:18px;
     }
-    .kv{ display:grid; gap:10px; margin-top: 8px; color: rgba(18,21,19,.72); font-size: 14px; line-height:1.55; }
-    .kv div b{ color: rgba(18,21,19,.88); }
+    .kv{display:grid;gap:10px;margin-top:8px;color:rgba(18,21,19,.72);font-size:14px;line-height:1.55}
 
-    /* Floating WhatsApp */
     .wa-float{
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 60;
-      display:flex;
-      align-items:center;
-      gap:10px;
-      padding: 12px 14px;
-      border-radius: 999px;
-      background: var(--brand);
-      color: #fff;
-      text-decoration:none;
-      font-weight: 700;
-      box-shadow: var(--shadow);
+      position:fixed;right:18px;bottom:18px;z-index:60;
+      display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:999px;
+      background:var(--brand);color:#fff;text-decoration:none;font-weight:700;box-shadow:var(--shadow);
     }
-    .wa-float small{ font-weight: 500; opacity:.9; }
+    .wa-float small{font-weight:500;opacity:.9}
 
-    footer{
-      margin-top: 30px;
-      border-top: 1px solid var(--line);
-      padding: 22px 0;
-      color: rgba(18,21,19,.62);
-      font-size: 13px;
-    }
-    .foot{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      flex-wrap:wrap;
-    }
-    .smalllinks{ display:flex; gap:14px; flex-wrap:wrap; }
-    .smalllinks a{ color: rgba(18,21,19,.62); text-decoration:none; }
-    .smalllinks a:hover{ color: rgba(18,21,19,.88); }
+    footer{margin-top:30px;border-top:1px solid var(--line);padding:22px 0;color:rgba(18,21,19,.62);font-size:13px}
+    .foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .smalllinks{display:flex;gap:14px;flex-wrap:wrap}
+    .smalllinks a{color:rgba(18,21,19,.62);text-decoration:none}
+    .smalllinks a:hover{color:rgba(18,21,19,.88)}
 
-    /* Responsive */
-    @media (max-width: 900px){
-      .hero-grid{ grid-template-columns: 1fr; }
-      .hero-photo{ min-height: 280px; }
-      .hero-photo img{ min-height: 280px; }
-      .about{ grid-column: span 12; }
-      .about-photo{ grid-column: span 12; min-height: 220px; }
-      .therapy{ grid-column: span 6; }
+    @media (max-width:900px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero-photo{min-height:280px}
+      .hero-photo img{min-height:280px}
+      .about{grid-column:span 12}
+      .about-photo{grid-column:span 12;min-height:220px}
+      .therapy{grid-column:span 6}
     }
-    @media (max-width: 560px){
-      nav{ display:none; }
-      .therapy{ grid-column: span 12; }
-      .btn{ width: 100%; }
-      .hero-actions{ width: 100%; }
-      .brand{ min-width:auto; }
-      .cta{ width: 100%; }
+    @media (max-width:560px){
+      nav{display:none}
+      .therapy{grid-column:span 12}
+      .btn{width:100%}
+      .hero-actions{width:100%}
+      .brand{min-width:auto}
+      .cta{width:100%}
     }
   </style>
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -410,20 +228,9 @@
     "url":"https://catiacoutinhoholistica.com/",
     "telephone":"+351934659071",
     "areaServed":["Viana do Castelo","Arcos de Valdevez","Monção"],
-    "image":[
-      "https://catiacoutinhoholistica.com/novo-logo-catia.png"
-    ],
-    "sameAs":[
-      "https://www.instagram.com/_catia_coutinho/"
-    ],
-    "description":"Terapias holísticas por marcação: Reiki, Shamballa, Numerologia, Cromoterapia e Runas. Sessões presenciais e online.",
-    "makesOffer":[
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Reiki"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Shamballa"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Numerologia"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cromoterapia"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Runas"}}
-    ]
+    "image":["https://catiacoutinhoholistica.com/novo-logo-catia.png"],
+    "sameAs":["https://www.instagram.com/_catia_coutinho/"],
+    "description":"Terapias holísticas por marcação: Reiki, Shamballa, Numerologia, Cromoterapia e Runas. Sessões presenciais e online."
   }
   </script>
 </head>
@@ -449,7 +256,6 @@
   </header>
 
   <main id="top" class="wrap">
-    <!-- HERO -->
     <section class="hero">
       <div class="hero-grid">
         <div class="hero-card">
@@ -477,9 +283,9 @@
           </div>
         </div>
 
+        <!-- TROCA: hero agora usa cromoterapia para não repetir Reiki -->
         <div class="hero-photo" aria-label="Imagem de destaque">
-          <!-- Usa uma imagem local (evita falhas). Podes trocar por outra se quiseres. -->
-          <img src="reiki-viana-do-castelo.jpg" alt="Ambiente calmo e acolhedor para terapia" loading="eager">
+          <img src="cromoterapia-viana-do-castelo.jpg" alt="Ambiente calmo e acolhedor para terapia" loading="eager">
           <div class="overlay"></div>
           <div class="badge">
             <div class="t1">Espaço acolhedor e seguro</div>
@@ -489,7 +295,6 @@
       </div>
     </section>
 
-    <!-- SOBRE -->
     <section id="sobre">
       <div class="section-title">
         <h2>Sobre a Cátia</h2>
@@ -519,7 +324,6 @@
       </div>
     </section>
 
-    <!-- TERAPIAS -->
     <section id="terapias">
       <div class="section-title">
         <h2>Terapias</h2>
@@ -528,53 +332,28 @@
 
       <div class="grid">
         <article class="card therapy">
-          <div class="img">
-            <img src="reiki-viana-do-castelo.jpg" alt="Reiki" loading="lazy">
-          </div>
-          <div class="body">
-            <h3>Reiki</h3>
-            <p>Terapia energética que canaliza energia universal para relaxamento, equilíbrio e bem-estar.</p>
-          </div>
+          <div class="img"><img src="reiki-viana-do-castelo.jpg" alt="Reiki" loading="lazy"></div>
+          <div class="body"><h3>Reiki</h3><p>Terapia energética que canaliza energia universal para relaxamento, equilíbrio e bem-estar.</p></div>
         </article>
 
         <article class="card therapy">
-          <div class="img">
-            <img src="shamballa-terapia-energetica.jpg" alt="Shamballa" loading="lazy">
-          </div>
-          <div class="body">
-            <h3>Shamballa</h3>
-            <p>Sistema vibracional com frequências de luz e amor, promovendo harmonia e alinhamento energético.</p>
-          </div>
+          <div class="img"><img src="shamballa-terapia-energetica.jpg" alt="Shamballa" loading="lazy"></div>
+          <div class="body"><h3>Shamballa</h3><p>Sistema vibracional com frequências de luz e amor, promovendo harmonia e alinhamento energético.</p></div>
         </article>
 
         <article class="card therapy">
-          <div class="img">
-            <img src="numerologia-mapa-pessoal.jpg" alt="Numerologia" loading="lazy">
-          </div>
-          <div class="body">
-            <h3>Numerologia</h3>
-            <p>Ferramenta de autoconhecimento baseada em padrões e ciclos pessoais, para mais clareza e direção.</p>
-          </div>
+          <div class="img"><img src="numerologia-mapa-pessoal.jpg" alt="Numerologia" loading="lazy"></div>
+          <div class="body"><h3>Numerologia</h3><p>Ferramenta de autoconhecimento baseada em padrões e ciclos pessoais, para mais clareza e direção.</p></div>
         </article>
 
         <article class="card therapy">
-          <div class="img">
-            <img src="cromoterapia-viana-do-castelo.jpg" alt="Cromoterapia" loading="lazy">
-          </div>
-          <div class="body">
-            <h3>Cromoterapia</h3>
-            <p>Harmonização do corpo e mente através das cores — apoio ao equilíbrio emocional e energético.</p>
-          </div>
+          <div class="img"><img src="cromoterapia-viana-do-castelo.jpg" alt="Cromoterapia" loading="lazy"></div>
+          <div class="body"><h3>Cromoterapia</h3><p>Harmonização do corpo e mente através das cores — apoio ao equilíbrio emocional e energético.</p></div>
         </article>
 
         <article class="card therapy">
-          <div class="img">
-            <img src="runas-terapia-catia-coutinho.jpg" alt="Runas" loading="lazy">
-          </div>
-          <div class="body">
-            <h3>Runas</h3>
-            <p>Orientação simbólica e ancestral para reflexão, mensagens e clareza sobre o teu momento.</p>
-          </div>
+          <div class="img"><img src="runas-terapia-catia-coutinho.jpg" alt="Runas" loading="lazy"></div>
+          <div class="body"><h3>Runas</h3><p>Orientação simbólica e ancestral para reflexão, mensagens e clareza sobre o teu momento.</p></div>
         </article>
       </div>
 
@@ -585,7 +364,6 @@
       </div>
     </section>
 
-    <!-- MARCAR -->
     <section id="marcar">
       <div class="section-title">
         <h2>Marca a tua sessão</h2>
@@ -596,7 +374,6 @@
         <div class="box">
           <b>WhatsApp (contacto direto)</b>
           <div class="kv">
-            <div><b>Número:</b> +351 934 659 071</div>
             <div><b>Áreas:</b> Viana do Castelo • Arcos de Valdevez • Monção</div>
             <div><b>Como marcar:</b> envia o teu nome + presencial/online + zona</div>
           </div>
@@ -621,7 +398,6 @@
     </footer>
   </main>
 
-  <!-- Floating WhatsApp button -->
   <a class="wa-float" href="https://wa.me/351934659071" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
     WhatsApp <small>Marcar sessão</small>
   </a>
