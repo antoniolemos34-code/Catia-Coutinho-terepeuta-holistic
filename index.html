@@ -1,187 +1,515 @@
-<!DOCTYPE html>
-<html lang="pt">
+<!doctype html>
+<html lang="pt-PT">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<title>Cátia Coutinho | Terapeuta Holística em Viana do Castelo</title>
+  <title>Cátia Coutinho | Terapias Holísticas em Viana do Castelo, Arcos de Valdevez e Monção</title>
+  <meta name="description" content="Cátia Coutinho — Terapeuta Holística. Reiki, Shamballa, Numerologia, Cromoterapia e Runas. Atendimento presencial (em espaços parceiros) e online, sempre por marcação." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://catiacoutinhoholistica.com/" />
 
-<meta name="description" content="Cátia Coutinho – Terapeuta Holística em Viana do Castelo, Arcos de Valdevez e Monção. Reiki, Shamballa, Numerologia e terapias energéticas por marcação.">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Cátia Coutinho — Terapias Holísticas" />
+  <meta property="og:description" content="Atendimento por marcação. Presencial (em Viana do Castelo, Arcos de Valdevez e Monção) e online." />
+  <meta property="og:image" content="https://catiacoutinhoholistica.com/og.jpg" />
 
-<meta name="keywords" content="Terapeuta holística Viana do Castelo, Reiki Viana, Numerologia Arcos de Valdevez, Terapias energéticas Monção">
+  <!-- Optional favicon -->
+  <link rel="icon" href="favicon.ico" />
 
-<link rel="canonical" href="https://catiacoutinhoholistica.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-<meta property="og:title" content="Cátia Coutinho – Terapias Holísticas">
-<meta property="og:description" content="Sessões presenciais e online por marcação. Bem-estar, equilíbrio e autoconhecimento.">
-<meta property="og:type" content="website">
+  <style>
+    :root{
+      --bg:#f6f5f2;
+      --card:#ffffff;
+      --text:#161616;
+      --muted:#5f6368;
+      --brand:#2e6f4d;
+      --brand-2:#1f4b35;
+      --gold:#c8b27a;
+      --shadow: 0 18px 45px rgba(0,0,0,.10);
+      --shadow-soft: 0 10px 25px rgba(0,0,0,.06);
+      --radius: 22px;
+      --radius-sm: 16px;
+      --max: 1120px;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; }
+    body{
+      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(900px 300px at 50% 0%, rgba(46,111,77,.12), transparent 60%) , var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
 
-<style>
-body{
-font-family:'Poppins',sans-serif;
-margin:0;
-background:#f7f6f3;
-color:#222;
-}
+    a{ color:inherit; }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:0 18px; }
 
-header{
-padding:20px;
-text-align:center;
-background:white;
-box-shadow:0 4px 15px rgba(0,0,0,0.05);
-}
+    /* Top bar */
+    header{
+      position:sticky; top:0; z-index:50;
+      background: rgba(246,245,242,.75);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .top{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:16px;
+    }
+    .brandbox{ display:flex; align-items:center; gap:12px; min-width:0; }
+    .logo{
+      height:44px; width:auto; display:block;
+      border-radius: 12px;
+    }
+    .nav{
+      display:flex; gap:16px; align-items:center;
+      color: rgba(0,0,0,.75);
+      font-weight:500;
+      font-size:.95rem;
+    }
+    .nav a{ text-decoration:none; opacity:.9; }
+    .nav a:hover{ opacity:1; }
 
-.logo{
-max-height:85px;
-}
+    .pill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 14px;
+      border-radius:999px;
+      background: rgba(46,111,77,.10);
+      color: var(--brand-2);
+      font-weight:600;
+      font-size:.9rem;
+      border: 1px solid rgba(46,111,77,.18);
+      white-space:nowrap;
+    }
 
-.hero{
-padding:70px 20px;
-text-align:center;
-}
+    /* Hero */
+    .hero{
+      padding: 42px 0 20px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.25fr .95fr;
+      gap: 26px;
+      align-items:stretch;
+    }
+    .heroCard{
+      background: rgba(255,255,255,.72);
+      border:1px solid rgba(0,0,0,.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      padding: 28px;
+    }
+    h1{
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 3.2vw, 2.65rem);
+      letter-spacing: -0.02em;
+      line-height:1.15;
+    }
+    .accent{ color: var(--brand); }
+    .lead{
+      margin: 0 0 18px;
+      color: var(--muted);
+      max-width: 62ch;
+    }
+    .ctaRow{
+      display:flex; flex-wrap:wrap; gap:12px; align-items:center;
+      margin-top: 14px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding: 13px 18px;
+      border-radius: 999px;
+      text-decoration:none;
+      font-weight:700;
+      border: 1px solid transparent;
+      box-shadow: 0 16px 35px rgba(0,0,0,.12);
+      transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+    }
+    .btn:active{ transform: translateY(1px); }
+    .btnPrimary{ background: var(--brand); color: #fff; }
+    .btnPrimary:hover{ opacity:.95; box-shadow: 0 18px 40px rgba(0,0,0,.14); }
+    .btnGhost{
+      background: rgba(255,255,255,.85);
+      border-color: rgba(0,0,0,.10);
+      box-shadow: none;
+      font-weight:650;
+    }
+    .btnGhost:hover{ background:#fff; }
 
-.hero h1{
-font-size:2.5rem;
-margin-bottom:15px;
-}
+    .metaLine{
+      margin-top: 16px;
+      color: rgba(0,0,0,.70);
+      font-size:.95rem;
+    }
 
-.hero span{
-color:#2e6f4d;
-}
+    .heroImg{
+      border-radius: var(--radius);
+      overflow:hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(0,0,0,.08);
+      background:#ddd;
+      min-height: 320px;
+    }
+    .heroImg img{
+      width:100%; height:100%; object-fit:cover; display:block;
+      transform: scale(1.02);
+    }
 
-.hero p{
-max-width:650px;
-margin:auto;
-color:#555;
-margin-bottom:25px;
-}
+    /* Section */
+    section{ padding: 40px 0; }
+    .sectionTitle{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:16px;
+      margin-bottom: 16px;
+    }
+    h2{
+      margin:0;
+      font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+      letter-spacing:-0.01em;
+    }
+    .sub{
+      margin:0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
 
-.btn{
-display:inline-block;
-padding:14px 26px;
-border-radius:50px;
-background:#2e6f4d;
-color:white;
-font-weight:600;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
 
-.section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
-}
+    .card{
+      background: rgba(255,255,255,.80);
+      border:1px solid rgba(0,0,0,.06);
+      border-radius: var(--radius);
+      overflow:hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    .cardMedia{ height: 170px; background:#e7e7e7; }
+    .cardMedia img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .cardBody{ padding: 16px 16px 18px; }
+    .cardBody h3{ margin: 0 0 6px; font-size: 1.05rem; }
+    .cardBody p{ margin: 0; color: var(--muted); font-size: .95rem; }
 
-.section h2{
-text-align:center;
-margin-bottom:40px;
-}
+    /* Appointment box */
+    .infoRow{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .box{
+      background: rgba(255,255,255,.85);
+      border:1px solid rgba(0,0,0,.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+    }
+    .box strong{ display:block; margin-bottom: 6px; }
+    .list{ margin:0; padding-left: 18px; color: var(--muted); }
+    .list li{ margin: 6px 0; }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-}
+    .notice{
+      margin-top: 16px;
+      background: rgba(255,255,255,.85);
+      border:1px solid rgba(0,0,0,.06);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
 
-.card{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 15px 30px rgba(0,0,0,0.08);
-}
+    /* Footer */
+    footer{
+      padding: 28px 0;
+      margin-top: 14px;
+      border-top: 1px solid rgba(0,0,0,.06);
+      color: rgba(0,0,0,.65);
+      font-size: .92rem;
+    }
+    .footRow{
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between;
+    }
 
-.card h3{
-margin-bottom:10px;
-}
+    /* Floating WhatsApp */
+    .waFloat{
+      position: fixed;
+      right: 16px; bottom: 16px;
+      z-index: 99;
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 12px 14px;
+      border-radius: 999px;
+      background: var(--brand);
+      color: #fff;
+      text-decoration:none;
+      font-weight:800;
+      box-shadow: 0 18px 45px rgba(0,0,0,.22);
+    }
+    .waFloat:hover{ opacity:.95; }
 
-.notice{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.05);
-margin-top:40px;
-font-size:0.9rem;
-color:#666;
-}
+    /* Responsive */
+    @media (max-width: 980px){
+      .heroGrid{ grid-template-columns: 1fr; }
+      .heroImg{ min-height: 260px; }
+      .grid{ grid-template-columns: 1fr; }
+      .infoRow{ grid-template-columns: 1fr; }
+      .nav{ display:none; }
+    }
+  </style>
 
-footer{
-text-align:center;
-padding:25px;
-background:#222;
-color:white;
-}
-</style>
+  <!-- Schema.org (Service-area business; appointment-only) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Cátia Coutinho — Terapias Holísticas",
+    "url":"https://catiacoutinhoholistica.com/",
+    "telephone":"+351934659071",
+    "areaServed":[
+      {"@type":"City","name":"Viana do Castelo"},
+      {"@type":"City","name":"Arcos de Valdevez"},
+      {"@type":"City","name":"Monção"}
+    ],
+    "serviceType":[
+      "Reiki","Shamballa","Numerologia","Cromoterapia","Runas"
+    ],
+    "priceRange":"€€",
+    "sameAs":[
+      "https://www.instagram.com/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
 <header>
-<img src="logo.png" class="logo" alt="Cátia Coutinho Logotipo">
+  <div class="wrap">
+    <div class="top">
+      <div class="brandbox">
+        <img src="logo-catia.jpg" class="logo" alt="Logótipo Cátia Coutinho — Terapias Holísticas">
+        <span class="pill">Atendimento por marcação</span>
+      </div>
+
+      <nav class="nav" aria-label="Navegação">
+        <a href="#terapias">Terapias</a>
+        <a href="#marcacoes">Marcações</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </div>
 </header>
 
-<section class="hero">
-<h1>Terapias holísticas para apoiar o teu <span>bem-estar</span></h1>
-<p>
-Reiki, Shamballa, Numerologia e outras terapias energéticas para equilíbrio emocional,
-clareza mental e autoconhecimento.
-</p>
+<main>
 
-<a class="btn" href="https://wa.me/351934659071" target="_blank">
-Marcar sessão no WhatsApp
-</a>
+  <section class="hero">
+    <div class="wrap">
+      <div class="heroGrid">
+        <div class="heroCard">
+          <h1>Terapias holísticas para apoiar o teu <span class="accent">bem-estar</span>.</h1>
+          <p class="lead">
+            Reiki, Shamballa, Numerologia, Cromoterapia e Runas — sessões personalizadas para equilíbrio emocional,
+            clareza mental e autoconhecimento. Atendimento presencial (em espaços parceiros) e online, sempre por marcação.
+          </p>
 
-<p style="margin-top:20px;font-size:0.9rem;color:#777;">
-Atendimento por marcação em:
-<strong>Viana do Castelo • Arcos de Valdevez • Monção</strong>
-</p>
-</section>
+          <div class="ctaRow">
+            <a class="btn btnPrimary" href="https://wa.me/351934659071" target="_blank" rel="noopener">
+              Marcar sessão no WhatsApp
+            </a>
+            <a class="btn btnGhost" href="#marcacoes">Ver horários e locais</a>
+          </div>
 
-<section class="section">
-<h2>Terapias</h2>
-<div class="grid">
+          <p class="metaLine">
+            Atendimento em: <strong>Viana do Castelo • Arcos de Valdevez • Monção</strong>
+          </p>
+        </div>
 
-<div class="card">
-<h3>Reiki</h3>
-<p>Prática energética focada no relaxamento profundo e equilíbrio interior.</p>
-</div>
+        <div class="heroImg" aria-label="Imagem de ambiente terapêutico">
+          <img
+            src="https://images.unsplash.com/photo-1611072965167-f06aa3e1d454?auto=format&fit=crop&w=1400&q=80"
+            alt="Ambiente de terapia com mãos e energia"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Shamballa</h3>
-<p>Energia vibracional para harmonia e alinhamento.</p>
-</div>
+  <section id="terapias">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <div>
+          <h2>Terapias</h2>
+          <p class="sub">Conhece algumas ferramentas que podem ser usadas nas tuas sessões.</p>
+        </div>
+      </div>
 
-<div class="card">
-<h3>Numerologia</h3>
-<p>Ferramenta de autoconhecimento baseada em ciclos e padrões pessoais.</p>
-</div>
+      <div class="grid">
+        <article class="card">
+          <div class="cardMedia">
+            <img src="https://images.unsplash.com/photo-1611072965167-f06aa3e1d454?auto=format&fit=crop&w=1400&q=80" alt="Reiki" loading="lazy">
+          </div>
+          <div class="cardBody">
+            <h3>Reiki</h3>
+            <p>Prática energética focada no relaxamento profundo, redução de stress e equilíbrio interior.</p>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Cromoterapia</h3>
-<p>Uso das cores como apoio ao equilíbrio emocional.</p>
-</div>
+        <article class="card">
+          <div class="cardMedia">
+            <img src="https://images.unsplash.com/photo-1498671546682-94a232c26d17?auto=format&fit=crop&w=1400&q=80" alt="Shamballa" loading="lazy">
+          </div>
+          <div class="cardBody">
+            <h3>Shamballa</h3>
+            <p>Abordagem energética para harmonia, alinhamento e presença — ajustada às tuas necessidades.</p>
+          </div>
+        </article>
 
-<div class="card">
-<h3>Runas</h3>
-<p>Orientação simbólica para reflexão e clareza.</p>
-</div>
+        <article class="card">
+          <div class="cardMedia">
+            <img src="https://images.pexels.com/photos/3617552/pexels-photo-3617552.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Numerologia" loading="lazy">
+          </div>
+          <div class="cardBody">
+            <h3>Numerologia</h3>
+            <p>Ferramenta de autoconhecimento baseada em padrões e ciclos pessoais para ganhar clareza.</p>
+          </div>
+        </article>
 
-</div>
+        <article class="card">
+          <div class="cardMedia">
+            <img src="https://images.pexels.com/photos/7130466/pexels-photo-7130466.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Cromoterapia" loading="lazy">
+          </div>
+          <div class="cardBody">
+            <h3>Cromoterapia</h3>
+            <p>Uso das cores como apoio ao equilíbrio emocional e bem-estar (conforme o objetivo da sessão).</p>
+          </div>
+        </article>
 
-<div class="notice">
-<strong>Aviso importante:</strong><br><br>
-As terapias holísticas são práticas de bem-estar e não substituem aconselhamento médico ou tratamento clínico.
-Em caso de urgência, contacta os serviços de emergência.
-</div>
+        <article class="card">
+          <div class="cardMedia">
+            <img src="https://images.unsplash.com/photo-1697395304256-54e861b28811?auto=format&fit=crop&w=1400&q=80" alt="Runas" loading="lazy">
+          </div>
+          <div class="cardBody">
+            <h3>Runas</h3>
+            <p>Orientação simbólica para reflexão, clareza e tomada de decisão — com foco no teu momento.</p>
+          </div>
+        </article>
 
-</section>
+        <article class="card">
+          <div class="cardMedia">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1400&q=80" alt="Sessões online e presenciais" loading="lazy">
+          </div>
+          <div class="cardBody">
+            <h3>Sessões por marcação</h3>
+            <p>Presencial (em espaços parceiros) e online — contacto direto para agendar e confirmar disponibilidade.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="notice">
+        <strong>Aviso importante:</strong><br><br>
+        As terapias holísticas são práticas de bem-estar e autoconhecimento e não substituem aconselhamento médico,
+        psicológico/psiquiátrico, diagnóstico ou tratamento clínico. Em caso de urgência, contacta os serviços de emergência.
+      </div>
+    </div>
+  </section>
+
+  <section id="marcacoes">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <div>
+          <h2>Marcações e atendimento</h2>
+          <p class="sub">Atendimento presencial em locais parceiros e online — sempre por marcação.</p>
+        </div>
+      </div>
+
+      <div class="infoRow">
+        <div class="box">
+          <strong>Atendimento presencial (locais parceiros)</strong>
+          <ul class="list">
+            <li><strong>Arcos de Valdevez (BE):</strong> sábados, 10h–17h (com marcação antecipada)</li>
+            <li><strong>Monção (Vanessa Pombo):</strong> quartas e quintas, a partir das 17h30</li>
+            <li><strong>Viana do Castelo (Barbearia Frank):</strong> por marcação, conforme disponibilidade</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <strong>Como marcar</strong>
+          <ul class="list">
+            <li>Envia mensagem no WhatsApp com o teu nome + local pretendido</li>
+            <li>Indica dia/horário preferido (2 opções)</li>
+            <li>Recebes confirmação e instruções antes da sessão</li>
+          </ul>
+
+          <div style="margin-top:14px;">
+            <a class="btn btnPrimary" href="https://wa.me/351934659071" target="_blank" rel="noopener">
+              Marcar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="notice" style="margin-top:16px;">
+        <strong>Cancelamentos:</strong> as sessões devem ser desmarcadas com uma antecedência mínima de 24 horas.
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <div>
+          <h2>Contacto</h2>
+          <p class="sub">Marcações por contacto direto.</p>
+        </div>
+      </div>
+
+      <div class="infoRow">
+        <div class="box">
+          <strong>WhatsApp</strong>
+          <p style="margin:0;color:var(--muted);">Resposta por mensagem e confirmação de disponibilidade.</p>
+          <div style="margin-top:12px;">
+            <a class="btn btnPrimary" href="https://wa.me/351934659071" target="_blank" rel="noopener">Enviar mensagem</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <strong>Website</strong>
+          <p style="margin:0;color:var(--muted);">catiacoutinhoholistica.com</p>
+          <p style="margin:10px 0 0;color:var(--muted);font-size:.92rem;">
+            (Se quiseres, eu adiciono aqui Instagram / Email também.)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer>
-© <script>document.write(new Date().getFullYear())</script>
-Cátia Coutinho – Terapias Holísticas
+  <div class="wrap">
+    <div class="footRow">
+      <div>© <span id="y"></span> Cátia Coutinho — Terapias Holísticas</div>
+      <div>Atendimento por marcação • Viana do Castelo • Arcos de Valdevez • Monção</div>
+    </div>
+  </div>
 </footer>
+
+<a class="waFloat" href="https://wa.me/351934659071" target="_blank" rel="noopener" aria-label="Marcar sessão no WhatsApp">
+  WhatsApp • Marcar
+</a>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
