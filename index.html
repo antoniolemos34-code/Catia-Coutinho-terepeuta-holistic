@@ -17,6 +17,7 @@
   <meta property="og:title" content="Cátia Coutinho — Terapias Holísticas" />
   <meta property="og:description" content="Sessões presenciais e online por marcação. Bem-estar, equilíbrio e autoconhecimento." />
   <meta property="og:url" content="https://catiacoutinhoholistica.com/" />
+  <meta property="og:image" content="https://catiacoutinhoholistica.com/logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Icons -->
@@ -34,6 +35,7 @@
   <!-- Preloads -->
   <link rel="preload" as="image" href="cromoterapia-viana-do-castelo.jpg">
   <link rel="preload" as="image" href="novo-logo-catia.png">
+  <link rel="preload" as="image" href="logo.png">
 
   <style>
     :root{
@@ -83,6 +85,7 @@
       flex: 1;
       min-width: 210px;
     }
+    /* LOGO DO TOPO (usa novo-logo-catia.png) */
     .logoMark{
       width:44px;height:44px;border-radius:999px;
       object-fit:cover;
@@ -203,8 +206,27 @@
       display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border-radius:999px;
       background:#fff;border:1px solid var(--line);font-size:13px;color:rgba(18,21,19,.78);
     }
+
+    /* FOTO / LOGO DA SECÇÃO "SOBRE" */
     .about-photo{grid-column:span 5;min-height:240px}
     .about-photo img{width:100%;height:100%;object-fit:cover}
+
+    /* modo “banner logo” (fica lindo no laptop) */
+    .about-photo.is-logo{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      background:linear-gradient(135deg, rgba(46,111,77,.08), rgba(184,155,87,.08));
+    }
+    .about-photo.is-logo img{
+      object-fit:contain;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(18,21,19,.08);
+      border-radius:18px;
+      box-shadow:0 16px 40px rgba(0,0,0,.10);
+      padding:14px;
+    }
 
     /* Therapies */
     .therapy{grid-column:span 4}
@@ -279,7 +301,10 @@
     "url":"https://catiacoutinhoholistica.com/",
     "telephone":"+351934659071",
     "areaServed":["Viana do Castelo","Arcos de Valdevez","Monção"],
-    "image":["https://catiacoutinhoholistica.com/novo-logo-catia.png"],
+    "image":[
+      "https://catiacoutinhoholistica.com/logo.png",
+      "https://catiacoutinhoholistica.com/novo-logo-catia.png"
+    ],
     "sameAs":["https://www.instagram.com/_catia_coutinho/"],
     "description":"Terapias holísticas por marcação: Reiki, Shamballa, Numerologia, Cromoterapia e Runas. Sessões presenciais e online."
   }
@@ -289,6 +314,7 @@
 <body>
   <header>
     <div class="wrap topbar">
+      <!-- TOPO: usa novo-logo-catia.png -->
       <a class="brand" href="#top" aria-label="Ir para o topo">
         <img class="logoMark" src="novo-logo-catia.png" alt="Cátia Coutinho — Terapias Holísticas" />
         <span class="brandText">
@@ -311,7 +337,7 @@
   </header>
 
   <main id="top" class="wrap">
-    <!-- HERO (imagem: cromoterapia) -->
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-grid">
         <div class="hero-card">
@@ -350,7 +376,7 @@
       </div>
     </section>
 
-    <!-- SOBRE (imagem: numerologia para não repetir) -->
+    <!-- SOBRE -->
     <section id="sobre">
       <div class="section-title">
         <h2>Sobre a Cátia</h2>
@@ -374,8 +400,9 @@
           </div>
         </div>
 
-        <div class="card about-photo">
-          <img src="numerologia-mapa-pessoal.jpg" alt="Ambiente sereno de terapia holística" loading="lazy">
+        <!-- AQUI: usa logo.png (banner grande) -->
+        <div class="card about-photo is-logo" aria-label="Identidade visual Cátia Coutinho">
+          <img src="logo.png" alt="Cátia Coutinho — Terapias Holísticas" loading="lazy">
         </div>
       </div>
     </section>
@@ -436,7 +463,7 @@
       </div>
     </section>
 
-    <!-- MARCAR (sem número visível) -->
+    <!-- MARCAR -->
     <section id="marcar">
       <div class="section-title">
         <h2>Marca a tua sessão</h2>
