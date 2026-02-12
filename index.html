@@ -1,531 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- GOOGLE SEARCH CONSOLE -->
-  <meta name="google-site-verification" content="zejccmjXLDAVKalcirat1FyvTLGgDMYDycOZoWC6O6E" />
+<title>Cátia Coutinho | Terapeuta Holística em Viana do Castelo</title>
 
-  <title>Cátia Coutinho – Terapias Holísticas</title>
-  <meta name="description" content="Cátia Coutinho – terapias holísticas e bem-estar. Reiki, Shamballa, Numerologia, Cromoterapia e Runas para equilíbrio emocional e autoconhecimento. Sessões online e presenciais." />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <link rel="canonical" href="https://catiacoutinhoholistica.com/" />
+<meta name="description" content="Cátia Coutinho – Terapeuta Holística em Viana do Castelo, Arcos de Valdevez e Monção. Reiki, Shamballa, Numerologia e terapias energéticas por marcação.">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Cátia Coutinho – Terapias Holísticas" />
-  <meta property="og:description" content="Bem-estar, energia e autoconhecimento. Sessões online e presenciais." />
-  <meta property="og:url" content="https://catiacoutinhoholistica.com/" />
+<meta name="keywords" content="Terapeuta holística Viana do Castelo, Reiki Viana, Numerologia Arcos de Valdevez, Terapias energéticas Monção">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://catiacoutinhoholistica.com/">
 
-  <style>
-    :root {
-      --bg: #f5f5f7;
-      --bg-soft: #ffffff;
-      --text-main: #111111;
-      --text-muted: #6e6e73;
-      --accent: #0071e3;
-      --border: #d2d2d7;
-      --radius-lg: 26px;
-      --radius-md: 18px;
-      --shadow-soft: 0 18px 40px rgba(0,0,0,0.10);
-    }
+<meta property="og:title" content="Cátia Coutinho – Terapias Holísticas">
+<meta property="og:description" content="Sessões presenciais e online por marcação. Bem-estar, equilíbrio e autoconhecimento.">
+<meta property="og:type" content="website">
 
-    * { box-sizing: border-box; margin:0; padding:0; }
-    body {
-      font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #e5edff 0, #f5f5f7 55%);
-      color: var(--text-main);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; text-decoration:none; }
-    img { max-width:100%; display:block; }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(16px);
-      background: rgba(245,245,247,0.92);
-      border-bottom: 1px solid rgba(210,210,215,0.7);
-    }
+<style>
+body{
+font-family:'Poppins',sans-serif;
+margin:0;
+background:#f7f6f3;
+color:#222;
+}
 
-    .nav {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 10px 20px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-    }
+header{
+padding:20px;
+text-align:center;
+background:white;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+}
 
-    .brand { display:flex; align-items:center; gap:10px; }
-    .brand-logo {
-      height:55px; width:auto; display:block; border-radius:6px;
-    }
+.logo{
+max-height:85px;
+}
 
-    nav ul {
-      list-style:none;
-      display:flex;
-      gap:18px;
-      font-size:0.9rem;
-    }
-    nav a {
-      color:var(--text-muted);
-      position:relative;
-      padding-bottom:2px;
-    }
-    nav a::after {
-      content:"";
-      position:absolute;
-      left:0; bottom:0;
-      width:0; height:2px;
-      background:var(--accent);
-      transition:width .18s ease-out;
-    }
-    nav a:hover { color:var(--accent); }
-    nav a:hover::after { width:100%; }
+.hero{
+padding:70px 20px;
+text-align:center;
+}
 
-    .container { max-width:1040px; margin:0 auto; padding:0 20px; }
-    main { padding-bottom:40px; }
-    section { padding:60px 0; }
+.hero h1{
+font-size:2.5rem;
+margin-bottom:15px;
+}
 
-    /* HERO */
-    .hero { padding-top:80px; }
-    .hero-grid {
-      display:grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-      gap:32px;
-      align-items:center;
-    }
-    .hero-kicker {
-      text-transform:uppercase;
-      letter-spacing:.18em;
-      font-size:.75rem;
-      color:var(--text-muted);
-      margin-bottom:8px;
-    }
-    .hero h1 {
-      font-size:clamp(2rem, 4vw, 2.7rem);
-      line-height:1.1;
-      margin-bottom:10px;
-    }
-    .hero-highlight { color:var(--accent); }
-    .hero p {
-      color:var(--text-muted);
-      margin-bottom:18px;
-      font-size:0.98rem;
-    }
-    .hero-badges {
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-bottom:16px;
-    }
-    .hero-badge {
-      font-size:0.8rem;
-      padding:4px 10px;
-      border-radius:999px;
-      border:1px solid rgba(210,210,215,0.9);
-      background:#ffffff;
-      color:var(--text-muted);
-    }
-    .hero-cta {
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      align-items:center;
-      margin-bottom:14px;
-    }
-    .btn-primary {
-      border:none;
-      border-radius:999px;
-      padding:11px 20px;
-      background:var(--accent);
-      color:#ffffff;
-      font-weight:600;
-      font-size:0.95rem;
-      cursor:pointer;
-      box-shadow:0 12px 30px rgba(0,113,227,0.35);
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-    }
-    .btn-outline {
-      border-radius:999px;
-      padding:10px 18px;
-      border:1px solid var(--border);
-      background:rgba(255,255,255,0.9);
-      font-size:0.9rem;
-      color:var(--text-muted);
-      cursor:pointer;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-    }
-    .hero-media {
-      background:#ffffff;
-      border-radius:var(--radius-lg);
-      padding:16px;
-      box-shadow:var(--shadow-soft);
-      border:1px solid var(--border);
-    }
-    .hero-img { border-radius:20px; overflow:hidden; margin-bottom:12px; background:#000; }
-    .hero-img img { width:100%; height:auto; display:block; opacity:.96; }
-    .hero-caption { font-size:0.83rem; color:var(--text-muted); }
+.hero span{
+color:#2e6f4d;
+}
 
-    /* SECTION */
-    .section-title {
-      font-size:1.7rem;
-      margin-bottom:6px;
-      text-align:center;
-    }
-    .section-sub {
-      text-align:center;
-      color:var(--text-muted);
-      margin-bottom:26px;
-      font-size:0.94rem;
-      max-width:760px;
-      margin-left:auto;
-      margin-right:auto;
-    }
+.hero p{
+max-width:650px;
+margin:auto;
+color:#555;
+margin-bottom:25px;
+}
 
-    .grid {
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-      gap:22px;
-    }
+.btn{
+display:inline-block;
+padding:14px 26px;
+border-radius:50px;
+background:#2e6f4d;
+color:white;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
 
-    .card {
-      background:var(--bg-soft);
-      border-radius:var(--radius-md);
-      border:1px solid var(--border);
-      padding:18px 18px 20px;
-      box-shadow:0 14px 32px rgba(0,0,0,0.06);
-    }
-    .card h3 { margin-bottom:6px; font-size:1.05rem; }
-    .card p { font-size:0.93rem; color:var(--text-muted); }
+.section{
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+}
 
-    .therapy-img {
-      width:100%;
-      border-radius:14px;
-      overflow:hidden;
-      margin-bottom:10px;
-      background:#000;
-    }
-    .therapy-img img { width:100%; height:auto; display:block; opacity:.96; }
+.section h2{
+text-align:center;
+margin-bottom:40px;
+}
 
-    .about-layout {
-      display:grid;
-      grid-template-columns:minmax(0, 3fr) minmax(0, 2fr);
-      gap:26px;
-      align-items:start;
-    }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
 
-    .about-highlight {
-      border-radius:var(--radius-md);
-      padding:16px 18px;
-      border:1px solid var(--border);
-      background:#ffffff;
-      box-shadow:0 12px 26px rgba(0,0,0,0.04);
-    }
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
 
-    .pill-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
-    .pill {
-      font-size:0.8rem;
-      border-radius:999px;
-      border:1px solid var(--border);
-      padding:4px 10px;
-      color:var(--text-muted);
-      background:#fafafa;
-    }
+.card h3{
+margin-bottom:10px;
+}
 
-    /* AVISO */
-    .notice {
-      border-radius:18px;
-      padding:14px 14px 12px;
-      border:1px solid rgba(210,210,215,.9);
-      background:rgba(255,255,255,.85);
-      box-shadow:0 12px 26px rgba(0,0,0,0.04);
-    }
-    .notice h3 { font-size:1rem; margin-bottom:6px; }
-    .notice p { font-size:.9rem; color:var(--text-muted); }
+.notice{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+margin-top:40px;
+font-size:0.9rem;
+color:#666;
+}
 
-    .contact-card { text-align:center; }
-    .contact-note {
-      font-size:0.85rem;
-      color:var(--text-muted);
-      margin-top:10px;
-    }
-
-    .social-links {
-      display:flex;
-      justify-content:center;
-      gap:10px;
-      margin-top:12px;
-      flex-wrap:wrap;
-    }
-    .social-links a {
-      font-size:0.85rem;
-      padding:6px 12px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background:#ffffff;
-      color:var(--text-muted);
-    }
-
-    footer {
-      border-top:1px solid var(--border);
-      padding:20px 18px;
-      text-align:center;
-      font-size:0.85rem;
-      color:var(--text-muted);
-      background:#f9f9fb;
-    }
-
-    @media (max-width: 780px) {
-      nav ul { display:none; }
-      .hero-grid { grid-template-columns:1fr; }
-      .hero { padding-top:70px; }
-      .about-layout { grid-template-columns:1fr; }
-    }
-  </style>
+footer{
+text-align:center;
+padding:25px;
+background:#222;
+color:white;
+}
+</style>
 </head>
 
 <body>
+
 <header>
-  <div class="nav">
-    <div class="brand">
-      <img src="Catia-logo.png" alt="Logotipo Cátia Coutinho" class="brand-logo">
-    </div>
-    <nav aria-label="Navegação">
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#terapias">Terapias</a></li>
-        <li><a href="#privacidade">Privacidade</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
+<img src="logo.png" class="logo" alt="Cátia Coutinho Logotipo">
 </header>
 
-<main>
-  <!-- HERO -->
-  <section class="hero" id="topo">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-kicker">Energia • Cor • Autoconhecimento</div>
-        <h1>Terapias holísticas para apoiar o teu <span class="hero-highlight">bem-estar</span>.</h1>
-        <p>
-          Reiki, Shamballa, Numerologia, Cromoterapia e Runas como ferramentas de autocuidado,
-          equilíbrio e autoconhecimento. Sessões online e presenciais (quando possível).
-        </p>
+<section class="hero">
+<h1>Terapias holísticas para apoiar o teu <span>bem-estar</span></h1>
+<p>
+Reiki, Shamballa, Numerologia e outras terapias energéticas para equilíbrio emocional,
+clareza mental e autoconhecimento.
+</p>
 
-        <div class="hero-badges">
-          <span class="hero-badge">Atendimento personalizado</span>
-          <span class="hero-badge">Sessões presenciais e online</span>
-        </div>
+<a class="btn" href="https://wa.me/351934659071" target="_blank">
+Marcar sessão no WhatsApp
+</a>
 
-        <div class="hero-cta">
-          <a class="btn-primary" href="https://wa.me/351934659071" target="_blank" rel="noopener">
-            <span>💬</span> Falar com a Cátia no WhatsApp
-          </a>
-          <a class="btn-outline" href="https://www.instagram.com/_catia_coutinho" target="_blank" rel="noopener">
-            <span>📷</span> Ver Instagram
-          </a>
-        </div>
+<p style="margin-top:20px;font-size:0.9rem;color:#777;">
+Atendimento por marcação em:
+<strong>Viana do Castelo • Arcos de Valdevez • Monção</strong>
+</p>
+</section>
 
-        <div class="notice" role="note" aria-label="Aviso importante">
-          <h3>Aviso importante</h3>
-          <p>
-            As terapias holísticas são práticas de bem-estar e autoconhecimento. Não substituem aconselhamento médico,
-            psicológico/psiquiátrico, diagnóstico ou tratamento clínico. Resultados podem variar de pessoa para pessoa.
-            Em caso de urgência, contacta os serviços de emergência do teu país.
-          </p>
-        </div>
-      </div>
+<section class="section">
+<h2>Terapias</h2>
+<div class="grid">
 
-      <aside class="hero-media">
-        <div class="hero-img">
-          <img src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Ambiente calmo de bem-estar">
-        </div>
-        <div class="hero-caption">
-          Espaço acolhedor para cuidares de ti com calma, presença e consciência.
-        </div>
-      </aside>
-    </div>
-  </section>
+<div class="card">
+<h3>Reiki</h3>
+<p>Prática energética focada no relaxamento profundo e equilíbrio interior.</p>
+</div>
 
-  <!-- SOBRE -->
-  <section id="sobre">
-    <div class="container">
-      <h2 class="section-title">Sobre a Cátia</h2>
-      <p class="section-sub">Uma abordagem amorosa e consciente ao teu processo de bem-estar e autocuidado.</p>
+<div class="card">
+<h3>Shamballa</h3>
+<p>Energia vibracional para harmonia e alinhamento.</p>
+</div>
 
-      <div class="about-layout">
-        <div>
-          <p>
-            Sou terapeuta holística e acredito no poder da energia, da cor e do autoconhecimento para apoiar
-            equilíbrio emocional, físico e espiritual.
-          </p>
-          <br>
-          <p>
-            Cada sessão é criada à tua medida, unindo técnicas energéticas e ferramentas de consciência
-            para te ajudar a ganhar clareza, relaxamento e reconexão contigo.
-          </p>
-        </div>
+<div class="card">
+<h3>Numerologia</h3>
+<p>Ferramenta de autoconhecimento baseada em ciclos e padrões pessoais.</p>
+</div>
 
-        <div class="about-highlight">
-          <strong>Ferramentas que utilizo</strong>
-          <p style="margin-top:4px; font-size:0.9rem; color:var(--text-muted);">
-            Em cada sessão escolho a combinação mais adequada ao teu momento.
-          </p>
-          <div class="pill-row">
-            <span class="pill">Reiki</span>
-            <span class="pill">Shamballa</span>
-            <span class="pill">Numerologia</span>
-            <span class="pill">Cromoterapia</span>
-            <span class="pill">Runas</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="card">
+<h3>Cromoterapia</h3>
+<p>Uso das cores como apoio ao equilíbrio emocional.</p>
+</div>
 
-  <!-- TERAPIAS -->
-  <section id="terapias">
-    <div class="container">
-      <h2 class="section-title">Terapias</h2>
-      <p class="section-sub">Conhece um pouco de cada ferramenta que pode ser usada nas tuas sessões.</p>
+<div class="card">
+<h3>Runas</h3>
+<p>Orientação simbólica para reflexão e clareza.</p>
+</div>
 
-      <div class="grid">
-        <article class="card">
-          <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/5240677/pexels-photo-5240677.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Reiki">
-          </div>
-          <h3>Reiki</h3>
-          <p>Prática energética focada em relaxamento, equilíbrio e bem-estar.</p>
-        </article>
+</div>
 
-        <article class="card">
-          <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Shamballa">
-          </div>
-          <h3>Shamballa</h3>
-          <p>Abordagem energética para harmonia, serenidade e presença.</p>
-        </article>
+<div class="notice">
+<strong>Aviso importante:</strong><br><br>
+As terapias holísticas são práticas de bem-estar e não substituem aconselhamento médico ou tratamento clínico.
+Em caso de urgência, contacta os serviços de emergência.
+</div>
 
-        <article class="card">
-          <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/163186/globuli-medical-bless-you-homeopathy-163186.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Numerologia">
-          </div>
-          <h3>Numerologia</h3>
-          <p>Ferramenta de autoconhecimento baseada em padrões e ciclos pessoais.</p>
-        </article>
-
-        <article class="card">
-          <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/5240697/pexels-photo-5240697.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cromoterapia">
-          </div>
-          <h3>Cromoterapia</h3>
-          <p>Uso simbólico das cores como apoio ao relaxamento e ao equilíbrio emocional.</p>
-        </article>
-
-        <article class="card">
-          <div class="therapy-img">
-            <img src="https://images.pexels.com/photos/235990/pexels-photo-235990.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Runas">
-          </div>
-          <h3>Runas</h3>
-          <p>Ferramenta de reflexão para clareza e orientação pessoal.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRIVACIDADE -->
-  <section id="privacidade">
-    <div class="container">
-      <h2 class="section-title">Privacidade</h2>
-      <p class="section-sub">
-        Este site não tem formulários. O contacto é feito por WhatsApp e Instagram.
-      </p>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Dados que podem ser tratados</h3>
-          <p>
-            Ao enviar mensagem no WhatsApp/Instagram, podem existir dados como nome, número/conta,
-            conteúdo das mensagens e informação que escolhas partilhar.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Finalidade</h3>
-          <p>
-            Responder a pedidos de informação, marcações e acompanhamento do serviço. Não existe venda de dados.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Direitos</h3>
-          <p>
-            Podes pedir acesso, correção ou eliminação do histórico de contacto, dentro do que for possível.
-            Também se aplicam as políticas do WhatsApp/Instagram.
-          </p>
-        </div>
-      </div>
-
-      <div class="notice" role="note">
-        <h3>Nota RGPD</h3>
-        <p>
-          A proteção de dados em Portugal é enquadrada pelo RGPD e legislação aplicável.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <div class="container">
-      <h2 class="section-title">Marca a tua sessão</h2>
-      <p class="section-sub">Entra em contacto para esclarecer dúvidas ou agendar.</p>
-
-      <div class="card contact-card">
-        <p><strong>Fala com a Cátia por WhatsApp:</strong></p>
-        <p>
-          <a class="btn-primary" href="https://wa.me/351934659071" target="_blank" rel="noopener">
-            Abrir conversa no WhatsApp
-          </a>
-        </p>
-
-        <p class="contact-note">
-          Envia o teu nome e se prefereres sessão presencial ou online.
-        </p>
-
-        <div class="social-links">
-          <a href="https://www.instagram.com/_catia_coutinho" target="_blank" rel="noopener">
-            Instagram • @_catia_coutinho
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
+</section>
 
 <footer>
-  <p>&copy; <span id="year"></span> Cátia Coutinho • Terapias Holísticas</p>
+© <script>document.write(new Date().getFullYear())</script>
+Cátia Coutinho – Terapias Holísticas
 </footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
-```0
